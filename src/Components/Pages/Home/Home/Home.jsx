@@ -1,4 +1,5 @@
 import { Avatar, Typography, Chip, Button } from "@material-tailwind/react";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
@@ -163,7 +164,23 @@ const Home = () => {
               Hey
             </h1>
             <h1 className="text-4xl text-white -my-16 lg:text-5xl font-normal text-left py-10">
-              I am <span className="font-bold text-secondary-200">Shihab</span>
+              I am
+              <span className="font-bold text-secondary-200 ml-2">
+                <TypeAnimation
+                  sequence={[
+                    "Shihab",
+                    1000,
+                    "Hossain",
+                    1000,
+                    "Shihab",
+                    1000,
+                    "Hossain",
+                    1000,
+                  ]}
+                  speed={50}
+                  repeat={Infinity}
+                />
+              </span>
             </h1>
             <h1 className="text-4xl text-white lg:text-5xl font-normal text-left py-10">
               Full Stack Developer

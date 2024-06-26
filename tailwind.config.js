@@ -6,7 +6,7 @@ module.exports = withMT({
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('./src/assets/homeBg.svg')",
+        hero: "url('./src/assets/heroFinal.svg')",
       },
       colors: {
         primary: {
@@ -34,7 +34,6 @@ module.exports = withMT({
           700: "#00b781",
           800: "#00a572",
           900: "#008651",
-          901: "#1a1e23",
         },
       },
     },

@@ -65,7 +65,7 @@ export function MainNavBar() {
   }, []);
 
   return (
-    <Navbar className="animate__animated animate__fadeInDown mx-auto max-w-full px-4 py-2 bg-primary-900 rounded-none border-none  shadow-secondary-200 shadow-md">
+    <Navbar className="animate__animated animate__fadeInDown mx-auto max-w-full px-4 py-2 bg-primary-900 rounded-none border-none  shadow-secondary-200 shadow-sm rounded-b-lg">
       <div className="flex items-center justify-between">
         <Typography
           as="a"

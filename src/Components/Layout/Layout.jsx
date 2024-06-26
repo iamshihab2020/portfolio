@@ -4,7 +4,7 @@ import { MainNavBar } from "../Pages/Shared/Navbar/MainNavBar";
 
 const Layout = () => {
   return (
-    <div >
+    <div className="bg-primary-900">
       <MainNavBar />
       <Outlet />
     </div>
