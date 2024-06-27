@@ -6,7 +6,8 @@ module.exports = withMT({
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('./src/assets/heroFinal.svg')",
+        hero: "url('./src/assets/heroFinal_3.svg')",
+        hero2: "url('./src/assets/heroFinal_4.svg')",
       },
       colors: {
         primary: {
