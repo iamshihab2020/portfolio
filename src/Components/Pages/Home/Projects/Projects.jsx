@@ -26,7 +26,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="bg-hero bg-no-repeat bg-center bg-cover w-full  pb-14">
+    <div className="w-full  pb-14">
       <div className="py-14">
         <h1 className="animate__animated animate__fadeInDown text-5xl lg:text-6xl text-secondary-200 font-bold text-center py-10">
           Projects

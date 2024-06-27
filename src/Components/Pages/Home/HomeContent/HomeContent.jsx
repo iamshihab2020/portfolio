@@ -1,5 +1,11 @@
 import { Avatar, Typography, Chip, Button } from "@material-tailwind/react";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+
+
 
 const HomeContent = () => {
   return (
@@ -202,6 +208,16 @@ const HomeContent = () => {
             <h1 className="text-4xl text-white lg:text-5xl font-normal text-left py-10">
               Full Stack Developer
             </h1>
+
+            <div className="flex gap-3">
+              <Link to={"https://github.com/iamshihab2020"}>
+                <FaGithub className="shadow-lg duration-200 hover:shadow-secondary-200 text-5xl text-blue-600 "/>
+              </Link>
+              <Link to={"https://www.linkedin.com/in/sheikh-shihab-hossain/"}>
+                <FaLinkedin className="shadow-lg duration-200 hover:shadow-secondary-200 text-5xl text-primary-500 " />
+              </Link>
+            </div>
+
           </div>
         </div>
 
