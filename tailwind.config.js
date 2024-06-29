@@ -9,6 +9,7 @@ module.exports = withMT({
         hero: "url('./src/assets/heroFinal_3.svg')",
         hero2: "url('./src/assets/heroFinal_4.svg')",
       },
+      
       colors: {
         primary: {
           50: "#f5faff",

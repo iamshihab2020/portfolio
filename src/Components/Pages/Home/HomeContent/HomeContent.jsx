@@ -1,9 +1,9 @@
-import { Avatar, Typography, Chip, Button } from "@material-tailwind/react";
+import { Avatar, Typography, Chip, Button, Tooltip } from "@material-tailwind/react";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
-import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
+import { TbBrandFiverr } from "react-icons/tb";
 
 
 
@@ -13,7 +13,7 @@ const HomeContent = () => {
       className={`bg-hero bg-no-repeat bg-center bg-cover w-full min-h-screen pb-14 px-10 `}
     >
       <div>
-        <h1 className="animate__animated animate__fadeInDown text-5xl lg:text-6xl text-secondary-200 font-bold text-center py-14 sm:-mb-5 md:mb-5 lg:mb-10 ">
+        <h1 className="animate__animated animate__fadeInDown text-5xl lg:text-6xl text-secondary-200 font-bold text-center py-14 sm:-mb-5 md:mb-5 lg:mb-10 hidden lg:block">
           <TypeAnimation
             sequence={[
               "Web Developer",
@@ -33,7 +33,7 @@ const HomeContent = () => {
 
       <div className="flex items-center justify-between flex-col lg:flex-row px-10">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-32 ">
-          <div className="animate__animated animate__fadeInLeft bg-primary-800 h-[570px] w-96 rounded-tl-[160px] rounded-br-[160px] rounded-tr-lg rounded-bl-lg border-t-secondary-200 border-l-secondary-200 border-2 py-8 px-10 shadow-secondary-200 shadow-lg -mt-10">
+          <div className="animate__animated animate__fadeInLeft bg-primary-800 min-h-[570px] max-w-96 rounded-tl-[160px] rounded-br-[160px] rounded-tr-lg rounded-bl-lg border-t-secondary-200 border-l-secondary-200 border-2 py-8 px-10 shadow-secondary-200 shadow-lg -mt-10">
             <div className="flex flex-col items-center justify-center">
               <Avatar
                 src="https://i.ibb.co/MyHZtbM/profile-pic-6.png"
@@ -41,10 +41,16 @@ const HomeContent = () => {
                 size="xxl"
                 className="border-4 border-secondary-200 shadow-secondary-200 shadow-md "
               />
-              <Typography variant="h4" className="text-secondary-200 mt-2">
+              <Typography
+                variant="h4"
+                className="text-secondary-200 mt-2 font-['Kanit']"
+              >
                 Sheikh Shihab Hossain
               </Typography>
-              <Typography variant="paragraph" className="text-primary-400">
+              <Typography
+                variant="paragraph"
+                className="text-primary-400  font-['Kanit']"
+              >
                 Full Stack Developer
               </Typography>
             </div>
@@ -52,7 +58,7 @@ const HomeContent = () => {
             <div className="mt-5">
               <Typography
                 variant="paragraph"
-                className="flex items-center gap-4 my-2 text-primary-200"
+                className="flex items-center gap-4 my-2 text-primary-200 font-['Kanit']"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +79,7 @@ const HomeContent = () => {
 
               <Typography
                 variant="paragraph"
-                className="flex items-center gap-4 my-2 text-primary-200"
+                className="flex items-center gap-4 my-2 text-primary-200 font-['Kanit']"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +105,7 @@ const HomeContent = () => {
 
               <Typography
                 variant="paragraph"
-                className="flex items-center gap-4 my-2 text-primary-200"
+                className="flex items-center gap-4 my-2 text-primary-200 font-['Kanit']"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +164,7 @@ const HomeContent = () => {
             </div>
 
             <div className="flex items-center justify-center ">
-              <Button className="bg-primary-200 text-primary-900 capitalize mt-5 flex items-center">
+              <Button className="bg-primary-200 text-primary-900 capitalize mt-5 flex items-center font-['Kanit']">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -210,31 +216,51 @@ const HomeContent = () => {
             </h1>
 
             <div className="flex gap-3">
-              <Link to={"https://github.com/iamshihab2020"}>
-                <FaGithub className="shadow-lg duration-200 hover:shadow-secondary-200 text-5xl text-blue-600 "/>
-              </Link>
-              <Link to={"https://www.linkedin.com/in/sheikh-shihab-hossain/"}>
-                <FaLinkedin className="shadow-lg duration-200 hover:shadow-secondary-200 text-5xl text-primary-500 " />
-              </Link>
+              <Tooltip content="Github">
+                <Link to={"https://github.com/iamshihab2020"} className="p-2 ">
+                  <FaGithub className="rounded-full border-secondary-200 border-2 p-2 shadow-lg duration-200 hover:shadow-secondary-200 text-6xl text-secondary-200  " />
+                </Link>
+              </Tooltip>
+              <Tooltip content="Linkedin">
+                <Link to={"https://www.linkedin.com/in/sheikh-shihab-hossain/"} className="p-2 ">
+                  <FaLinkedin className="rounded-full border-secondary-200 border-2 p-2 shadow-lg duration-200 hover:shadow-secondary-200 text-6xl text-secondary-200 " />
+                </Link>
+              </Tooltip>
+              <Tooltip content="Fiverr">
+                <Link to={"https://www.fiverr.com/s/yvWEjW0"} className="p-2 ">
+                  <TbBrandFiverr className="rounded-full border-secondary-200 border-2 p-2 shadow-lg duration-200 hover:shadow-secondary-200 text-6xl text-secondary-200  " />
+                </Link>
+              </Tooltip>
             </div>
-
           </div>
         </div>
 
         <div className="bg-primary-900 animate__animated animate__fadeInRight mt-20 flex flex-col items-center justify-center gap-y-3 shadow-md p-10 rounded-3xl shadow-secondary-200 border-secondary-200 border">
           <div className="flex items-start justify-start gap-2 ">
-            <Typography variant="h1" className="text-secondary-200">
+            <Typography
+              variant="h1"
+              className="text-secondary-200 font-['Kanit]"
+            >
               4
             </Typography>
-            <Typography variant="paragraph" className="text-primary-200">
+            <Typography
+              variant="paragraph"
+              className="text-primary-200 font-['Kanit]"
+            >
               Programming <br /> Language
             </Typography>
           </div>
           <div className="flex items-start justify-start gap-2 ">
-            <Typography variant="h1" className="text-secondary-200">
+            <Typography
+              variant="h1"
+              className="text-secondary-200 font-['Kanit]"
+            >
               6
             </Typography>
-            <Typography variant="paragraph" className="text-primary-200">
+            <Typography
+              variant="paragraph"
+              className="text-primary-200 font-['Kanit]"
+            >
               Development <br /> Tools
             </Typography>
           </div>

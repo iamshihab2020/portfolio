@@ -4,7 +4,7 @@
     "name":"Hossain Pharma - A Medicine Selling E-Commerce",
     "image": "https://i.ibb.co/dMNLDDx/Screenshot-2024-06-27-133000.png",
     "live":"https://hossain-pharma.netlify.app/",
-    "github":"https://github.com/"
+    "github":"https://github.com/iamshihab2020/hossain-pharma"
   },
 
   {
@@ -12,7 +12,7 @@
     "name":"Tour Goo - A Tourism Management Website",
     "image": "https://i.ibb.co/Z6yKy7L/Screenshot-2024-06-27-132252.png",
     "live":"https://tour-goo.web.app/",
-    "github":"https://github.com/"
+    "github":"https://github.com/iamshihab2020/tourism-management-website"
   },
 
   {
@@ -20,13 +20,13 @@
     "name":"Boycott Forum - An Alternative Product Information System",
     "image": "https://i.ibb.co/rbTRYqr/Screenshot-2024-06-27-132002.png",
     "live":"https://boycott-forum.web.app/",
-    "github":"https://github.com/"
+    "github":"https://github.com/iamshihab2020/boycott-product-forum"
   },
   {
     "id":5,
     "name":"Sanctuary Real Estate Company Website with Auth",
     "image": "https://i.ibb.co/KrsbQ3n/Screenshot-2024-06-27-132748.png",
     "live":"https://real-eastate-2024.web.app/",
-    "github":"https://github.com/"
+    "github":"https://github.com/iamshihab2020/real-estate-website"
   }
 ]

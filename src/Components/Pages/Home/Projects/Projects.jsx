@@ -49,7 +49,7 @@ const Projects = () => {
           pagination={true}
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper"
-          style={{ height: "500px", width:"100%" }} 
+          style={{ height: "500px", width: "100%" }}
         >
           {projects.map((project, index) => (
             <SwiperSlide
@@ -57,7 +57,7 @@ const Projects = () => {
               style={{ display: "flex", justifyContent: "center" }}
               className="gap-5"
             >
-              <Card className="w-[500px] h-[400px]">
+              <Card className="w-[500px] h-[400px] bg-primary-700">
                 <CardHeader color="blue-gray" className="relative h-56">
                   <img
                     src={project.image}
@@ -66,17 +66,25 @@ const Projects = () => {
                   />
                 </CardHeader>
                 <CardBody>
-                  <Typography variant="h5" color="blue-gray" className="mb-2">
+                  <Typography
+                    variant="h5"
+                    color="blue-gray"
+                    className="mb-2 font-['Kanit'] text-secondary-100"
+                  >
                     {project.name}
                   </Typography>
                 </CardBody>
 
                 <CardFooter className="pt-0 flex justify-between items-end">
                   <Link to={project.live}>
-                    <Button className="bg-secondary-200 text-primary-900 capitalize">Live</Button>
+                    <Button  value="large" className="bg-secondary-200 text-primary-900 capitalize font-['Kanit'] ">
+                      Live
+                    </Button>
                   </Link>
                   <Link to={project.github}>
-                    <Button className="bg-secondary-200 text-primary-900 capitalize">Github</Button>
+                    <Button value="large"  className="bg-secondary-200 text-primary-900 capitalize font-['Kanit'] ">
+                      Github
+                    </Button>
                   </Link>
                 </CardFooter>
               </Card>

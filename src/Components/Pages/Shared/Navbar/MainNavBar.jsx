@@ -65,7 +65,7 @@ export function MainNavBar() {
   }, []);
 
   return (
-    <Navbar className="animate__animated animate__fadeInDown mx-auto max-w-full px-4 py-2 bg-primary-900 rounded-none border-none  shadow-secondary-200 shadow-sm rounded-b-lg">
+    <Navbar className="animate__animated animate__fadeInDown mx-auto max-w-full px-4 py-2 bg-primary-700 rounded-none border-none  shadow-secondary-200 shadow-sm rounded-b-lg">
       <div className="flex items-center justify-between">
         <Typography
           as="a"
@@ -73,9 +73,9 @@ export function MainNavBar() {
           variant="h5"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-secondary-200"
         >
-          {logo} <span className="text-white">Shihab Dev</span>
+          {logo} <span className="text-white font-['Kanit]">Shihab Dev</span>
         </Typography>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block font-['Kanit]">
           <NavList />
         </div>
         {/* <div className="hidden gap-2 lg:flex">
