@@ -1,36 +1,52 @@
-import ProgressBar from "../../Shared/ProgressBar/ProgressBar";
-// import Marquee from "react-fast-marquee";
+import { useEffect, useState } from "react";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
+
+import "./CSS/style.css"
+
 const Skills = () => {
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    fetch("skill.json")
+      .then((response) => response.json())
+      .then((data) => setSkills(data))
+      .catch((error) => console.error("Error fetching the projects:", error));
+  }, []);
   return (
-    <div className="w-full py-14 px-5 md:px-10 lg:px-20">
+    <div className="w-full py-20 px-5 md:px-10 lg:px-20">
       <h1 className="animate__animated animate__fadeInDown text-5xl lg:text-6xl text-secondary-200 font-bold text-center py-10 ">
         My Skills
       </h1>
-      <div className="mt-10 grid grid-row-1 lg:grid-cols-2 gap-y-6 gap-x-10">
-        <ProgressBar title={"HTML"} per={95} />
-        <ProgressBar title={"CSS"} per={95} />
-        <ProgressBar title={"TailwindCSS"} per={95} />
-        <ProgressBar title={"Bootstrap"} per={95} />
-        <ProgressBar title={"Bootstrap"} per={95} />
-        <ProgressBar title={"JS"} per={90} />
-        <ProgressBar title={"ReactJS"} per={92} />
-        <ProgressBar title={"NodeJS"} per={85} />
-        <ProgressBar title={"ExpressJS"} per={83} />
-        <ProgressBar title={"MongoDB"} per={83} />
+      <div className="flex items-center justify-center">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-y-6 gap-x-10">
+          {skills.map((skill, index) => (
+            <Card
+              className="card mt-6 max-w-96 bg-primary-500 hover:shadow-secondary-200 duration-200  "
+              key={index}
+            >
+              <CardBody className=" flex flex-col items-center justify-center ">
+                <img src={skill.img} alt="" className="h-24 " />
+              </CardBody>
+              <CardFooter className="pt-0">
+                <div className=" flex items-center justify-center">
+                  <Button
+                    size="sm"
+                    className="flex items-center gap-2 capitalize bg-primary-900 text-primary-400 hover-bg-change "
+                  >
+                    {skill.rate}
+                  </Button>
+                </div>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
       </div>
-
-      {/* <div className="z-10">
-        <Marquee>
-          <img src="../../../../assets/html.png" alt="" className="h-48" />
-          <img src="../../../../assets/css.png" alt="" className="h-48" />
-          <img src="../../../../assets/tailwind.png" alt="" className="h-48" />
-          <img src="../../../../assets/bootstrap.png" alt="" className="h-48" />
-          <img src="../../../../assets/js.png" alt="" className="h-48" />
-          <img src="../../../../assets/react.png" alt="" className="h-48" />
-          <img src="../../../../assets/node.png" alt="" className="h-48" />
-        </Marquee>
-      </div> */}
-
     </div>
   );
 };

@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/1nthQtx/html.png",
+    "rate": "Expert"
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/zxjRd06/css.png",
+    "rate": "Expert"
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/bL8JfcR/js.png",
+    "rate": "Expert"
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/48mn6Yz/tailwind.png",
+    "rate": "Expert"
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/mbHFtyM/bootstrap.png",
+    "rate": "Expert"
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/g6MWpgW/react-1.png",
+    "rate": "Expert"
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/8mfzZzH/node.png",
+    "rate": "Intermediate"
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/ZdHnYRy/express.png",
+    "rate": "Intermediate"
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/r4VkD2t/mongo.png",
+    "rate": "Intermediate"
+  },
+  {
+    "id": 10,
+    "img": "https://i.ibb.co/7XW7zV8/git.png",
+    "rate": "Comfortable"
+  }
+]
+
+
+

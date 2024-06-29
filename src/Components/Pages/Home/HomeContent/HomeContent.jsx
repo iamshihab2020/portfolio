@@ -10,7 +10,7 @@ import { TbBrandFiverr } from "react-icons/tb";
 const HomeContent = () => {
   return (
     <div
-      className={`bg-hero bg-no-repeat bg-center bg-cover w-full min-h-screen pb-14 px-10 `}
+      className={`bg-hero bg-no-repeat bg-center bg-cover w-full min-h-screen pb-14 px-5 lg:px-10`}
     >
       <div>
         <h1 className="animate__animated animate__fadeInDown text-5xl lg:text-6xl text-secondary-200 font-bold text-center py-14 sm:-mb-5 md:mb-5 lg:mb-10 hidden lg:block">
@@ -31,7 +31,7 @@ const HomeContent = () => {
         </h1>
       </div>
 
-      <div className="flex items-center justify-between flex-col lg:flex-row px-10">
+      <div className="flex items-center justify-between flex-col lg:flex-row px-5 lg:px-10">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-32 ">
           <div className="animate__animated animate__fadeInLeft bg-primary-800 min-h-[570px] max-w-96 rounded-tl-[160px] rounded-br-[160px] rounded-tr-lg rounded-bl-lg border-t-secondary-200 border-l-secondary-200 border-2 py-8 px-10 shadow-secondary-200 shadow-lg -mt-10">
             <div className="flex flex-col items-center justify-center">
