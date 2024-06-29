@@ -164,23 +164,25 @@ const HomeContent = () => {
             </div>
 
             <div className="flex items-center justify-center ">
-              <Button className="bg-primary-200 text-primary-900 capitalize mt-5 flex items-center font-['Kanit']">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="size-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-                  />
-                </svg>
-                Download CV
-              </Button>
+              <a href="/resume.pdf" download="resume.pdf">
+                <Button className="bg-primary-200 text-primary-900 capitalize mt-5 flex items-center font-['Kanit']">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="size-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                    />
+                  </svg>
+                  Download CV
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -222,7 +224,10 @@ const HomeContent = () => {
                 </Link>
               </Tooltip>
               <Tooltip content="Linkedin">
-                <Link to={"https://www.linkedin.com/in/sheikh-shihab-hossain/"} className="p-2 ">
+                <Link
+                  to={"https://www.linkedin.com/in/sheikh-shihab-hossain/"}
+                  className="p-2 "
+                >
                   <FaLinkedin className="rounded-full border-secondary-200 border-2 p-2 shadow-lg duration-200 hover:shadow-secondary-200 text-6xl text-secondary-200 " />
                 </Link>
               </Tooltip>
