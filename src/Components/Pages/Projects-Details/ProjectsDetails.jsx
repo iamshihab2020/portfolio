@@ -27,7 +27,7 @@ const ProjectsDetails = () => {
   }
 
   return (
-    <div className="flex justify-start lg:justify-around items-center lg:items-start gap-5 flex-col md:flex-row min-h-screen px-5 py-8 lg:py-10">
+    <div className="animate__animated animate__zoomIn  flex justify-start md:justify-around items-center md:items-start gap-5 flex-col md:flex-row min-h-screen px-5 py-8 lg:py-10">
       <div>
         <Link to={project.live}>
           <img src={project.image} alt="" className=" max-full lg:max-w-3xl" />
