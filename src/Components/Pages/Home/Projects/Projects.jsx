@@ -87,7 +87,7 @@ const Projects = () => {
                   <Link to={`/project-details/${project.id}`}>
                     <Button
                       value="large"
-                      className="px-0 bg-transparent text-secondary-200 border-none outline-none hover:border-none shadow-none  "
+                      className="px-0 bg-transparent text-secondary-200 border-none outline-none hover:border-none shadow-none hover:shadow-none  "
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

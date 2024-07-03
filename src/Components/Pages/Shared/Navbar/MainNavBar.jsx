@@ -8,51 +8,57 @@ import {
   ListItem,
 } from "@material-tailwind/react";
 
-import {
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-
-
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Typography
-        as="a"
-        href="#"
-        variant="large"
-        className="font-medium text-secondary-200"
-      >
-        <ListItem className="bg-transparent hover:bg-transparent hover:text-white flex items-center gap-2 py-2 pr-4">Home</ListItem>
-      </Typography>
+      <NavLink to={"/"}>
+        <Typography
+          as="a"
+          href="#"
+          variant="large"
+          className="font-medium text-secondary-200"
+        >
+          <ListItem className="bg-transparent hover:bg-transparent hover:text-white flex items-center gap-2 py-2 pr-4">
+            Home
+          </ListItem>
+        </Typography>
+      </NavLink>
 
-      <Typography
-        as="a"
-        href="#"
-        variant="large"
-        className="font-medium text-secondary-200"
-      >
-        <ListItem className="bg-transparent hover:bg-transparent hover:text-white flex items-center gap-2 py-2 pr-4">
-          Blogs
-        </ListItem>
-      </Typography>
+      
+      <NavLink to={"/"}>
+        <Typography
+          as="a"
+          href="#"
+          variant="large"
+          className="font-medium text-secondary-200"
+        >
+          <ListItem className="bg-transparent hover:bg-transparent hover:text-white flex items-center gap-2 py-2 pr-4">
+            Blogs
+          </ListItem>
+        </Typography>
+      </NavLink>
 
-      <Typography
-        as="a"
-        href="#"
-        variant="large"
-        className="font-medium text-secondary-200"
-      >
-        <ListItem className="bg-transparent hover:bg-transparent hover:text-white flex items-center gap-2 py-2 pr-4">
-          Contact
-        </ListItem>
-      </Typography>
+
+      <NavLink to={"/"}>
+        <Typography
+          as="a"
+          href="#"
+          variant="large"
+          className="font-medium text-secondary-200"
+        >
+          <ListItem className="bg-transparent hover:bg-transparent hover:text-white flex items-center gap-2 py-2 pr-4">
+            Contact
+          </ListItem>
+        </Typography>
+      </NavLink>
     </List>
   );
 }
 
-const logo = ("<S/>");
+const logo = "<S/>";
 
 export function MainNavBar() {
   const [openNav, setOpenNav] = React.useState(false);

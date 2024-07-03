@@ -1,32 +1,36 @@
 [
   {
-    "id":2,
-    "name":"Hossain Pharma - A Medicine Selling E-Commerce",
+    "id": 2,
+    "name": "Hossain Pharma - A Medicine Selling E-Commerce",
     "image": "https://i.ibb.co/dMNLDDx/Screenshot-2024-06-27-133000.png",
-    "live":"https://hossain-pharma.netlify.app/",
-    "github":"https://github.com/iamshihab2020/hossain-pharma"
+    "live": "https://hossain-pharma.netlify.app/",
+    "github": "https://github.com/iamshihab2020/hossain-pharma",
+    "description": "Hossain Pharmaceuticals is an advanced multi-vendor e-commerce platform designed for the seamless buying and selling of medicines. Users benefit from secure authentication options via Email-Password and Google, allowing them access to detailed product listings categorized for easy navigation. They can conveniently add items to their cart, proceed with card payments, and review their transaction history. For sellers, the platform offers comprehensive sales reports, insights into paid and pending transactions, and tools to manage product listings effectively through features like addition, deletion, and editing. Administrators have full control over user roles, product management, and oversee all transactions, ensuring smooth operations by approving payments promptly. Powered by React on the frontend with Material Tailwind React and backed by Node.js, Express, MongoDB, JWT, and Tanstack Query on the server, Hossain Pharmaceuticals delivers a robust and secure experience for all stakeholders."
   },
 
   {
-    "id":3,
-    "name":"Tour Goo - A Tourism Management Website",
+    "id": 3,
+    "name": "Tour Goo - A Tourism Management Website",
     "image": "https://i.ibb.co/Z6yKy7L/Screenshot-2024-06-27-132252.png",
-    "live":"https://tour-goo.web.app/",
-    "github":"https://github.com/iamshihab2020/tourism-management-website"
+    "live": "https://tour-goo.web.app/",
+    "github": "https://github.com/iamshihab2020/tourism-management-website",
+    "description": "Tour Goo is a Tourism Management Website designed with an eye-catching UI. It features an authentication system using Firebase, allowing users to view detailed information on all tourist spots. Users can add new tourist spot data, as well as update or delete the data they have added. The website is fully responsive, ensuring a seamless experience across all devices, and incorporates animations throughout to enhance user engagement. The tech stack includes React and TailwindCSS on the client side, and Node.js on the server side. Various packages were used to enhance functionality and user experience, such as React-simple-typewriter, React-tooltip, Sweet Alert, Animate.css, React-Hook-Form, Swiper Slider, React-fast-marquee, React-helmet-async, React-icons, Express, MongoDB, JWT, and Tanstack Query."
   },
 
   {
-    "id":4,
-    "name":"Boycott Forum - An Alternative Product Information System",
+    "id": 4,
+    "name": "Boycott Forum - An Alternative Product Information System",
     "image": "https://i.ibb.co/rbTRYqr/Screenshot-2024-06-27-132002.png",
-    "live":"https://boycott-forum.web.app/",
-    "github":"https://github.com/iamshihab2020/boycott-product-forum"
+    "live": "https://boycott-forum.web.app/",
+    "github": "https://github.com/iamshihab2020/boycott-product-forum",
+    "description": "Boycott Forum - An Alternative Product Information System is a platform designed for users to share and explore alternative product information. It features secure login via Email-Password and Google Auth, allowing users to submit queries and view others' queries and recommendations. Users can manage their own recommendations and view their submitted queries conveniently. Built with React and Material Tailwind on the client side, and Node, Express, MongoDB, and JWT on the server side, it utilizes dependencies like Animate CSS, Lottie-React, React-Form-Hook, React-Icons, React-Loader-Spinner, and Sweetalert2 to enhance user interaction and functionality."
   },
   {
-    "id":5,
-    "name":"Sanctuary Real Estate Company Website with Auth",
+    "id": 5,
+    "name": "Sanctuary Real Estate Company Website with Auth",
     "image": "https://i.ibb.co/KrsbQ3n/Screenshot-2024-06-27-132748.png",
-    "live":"https://real-eastate-2024.web.app/",
-    "github":"https://github.com/iamshihab2020/real-estate-website"
+    "live": "https://real-eastate-2024.web.app/",
+    "github": "https://github.com/iamshihab2020/real-estate-website",
+    "description": "Sanctuary Real Estate Company Website is a visually appealing platform designed to streamline real estate interactions. With its captivating UI and robust authentication system, users can effortlessly manage their profiles, explore detailed property listings, schedule tours, and view their scheduled appointments. The site is optimized for seamless access across all devices and incorporates dynamic animations to enhance user engagement. Built using React with TailwindCSS on the client side and Firebase on the server side, it leverages tools like Animate.css, React-Hook-Form, and Swiper Slider for enhanced functionality."
   }
 ]
