@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export function FooterCamp() {
   return (
-    <footer className="w-full  border-t border-secondary-200 py-6">
+    <footer className="w-full  border-t border-secondary-200 py-6 bg-primary-800">
       <Typography
         color="blue-gray"
         className="font-normal text-center text-secondary-200 "
