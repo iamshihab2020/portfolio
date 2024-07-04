@@ -18,7 +18,10 @@ const Skills = () => {
       .catch((error) => console.error("Error fetching the projects:", error));
   }, []);
   return (
-    <div className="animate__animated animate__fadeInDown w-full py-20 px-5 md:px-10 lg:px-20">
+    <div
+      className="animate__animated animate__fadeInDown w-full py-20 px-5 md:px-10 lg:px-20"
+      id="skill"
+    >
       <h1 className="text-5xl lg:text-6xl text-secondary-200 font-bold text-center py-10 ">
         My Skills
       </h1>

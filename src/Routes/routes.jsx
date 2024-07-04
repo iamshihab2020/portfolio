@@ -9,17 +9,13 @@ const router = createBrowserRouter([
     element: <Layout />,
     // errorElement: <ErrorPage />,
     children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
+      { path: "/", element: <Home /> },
+      { path: "/#skill", element: <Home /> },
+      { path: "/#contact", element: <Home /> },
       {
         path: "/project-details/:id",
         element: <ProjectsDetails />,
-        loader: ({ params }) =>
-          fetch(
-            `/projects.json/${params.id}`
-          ),
+        loader: ({ params }) => fetch(`/projects.json/${params.id}`),
       },
     ],
   },
