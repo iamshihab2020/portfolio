@@ -51,7 +51,7 @@ const HomeContent = () => {
                 variant="paragraph"
                 className="text-primary-400  font-['Kanit']"
               >
-                Full Stack Developer
+                Software Engineer
               </Typography>
             </div>
 
