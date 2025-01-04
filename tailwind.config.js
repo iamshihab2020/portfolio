@@ -1,15 +1,17 @@
 /* eslint-disable no-undef */
-const withMT = require("@material-tailwind/react/utils/withMT");
+import withMT from "@material-tailwind/react/utils/withMT";
 
-module.exports = withMT({
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+export default withMT({
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}", // Add your paths here
+  ],
   theme: {
     extend: {
       backgroundImage: {
         hero: "url('./src/assets/heroFinal_3.svg')",
         hero2: "url('./src/assets/heroFinal_4.svg')",
       },
-      
+
       colors: {
         primary: {
           50: "#f5faff",

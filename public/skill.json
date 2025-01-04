@@ -31,23 +31,43 @@
   },
   {
     "id": 7,
-    "img": "https://i.ibb.co/8mfzZzH/node.png",
-    "rate": "Intermediate"
+    "img": "https://i.ibb.co.com/g7MJ4bC/nextjs-256x256.png",
+    "rate": "Expert"
   },
   {
     "id": 8,
-    "img": "https://i.ibb.co/ZdHnYRy/express.png",
-    "rate": "Intermediate"
+    "img": "https://i.ibb.co.com/169PPKm/typescript-icon-256x256.png",
+    "rate": "Compfortable"
   },
   {
     "id": 9,
-    "img": "https://i.ibb.co/r4VkD2t/mongo.png",
+    "img": "https://i.ibb.co.com/0hwJ0jK/python-256x254.png",
     "rate": "Intermediate"
   },
   {
     "id": 10,
+    "img": "https://i.ibb.co.com/hczGG3p/pngegg.png",
+    "rate": "Compfortable"
+  },
+  {
+    "id": 11,
+    "img": "https://i.ibb.co/8mfzZzH/node.png",
+    "rate": "Intermediate"
+  },
+  {
+    "id": 12,
+    "img": "https://i.ibb.co/ZdHnYRy/express.png",
+    "rate": "Intermediate"
+  },
+  {
+    "id": 13,
+    "img": "https://i.ibb.co/r4VkD2t/mongo.png",
+    "rate": "Intermediate"
+  },
+  {
+    "id": 14,
     "img": "https://i.ibb.co/7XW7zV8/git.png",
-    "rate": "Comfortable"
+    "rate": "Expert"
   }
 ]
 

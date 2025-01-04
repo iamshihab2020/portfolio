@@ -26,7 +26,7 @@ const AboutUs = () => {
             </h3>
             <h4 className="vertical-timeline-element-subtitle">Khulna, Bangladesh</h4>
             <p className="text-right font-extrabold">
-              Software Engineer
+              Software Engineer at Ternary Solutions Inc.
             </p>
           </VerticalTimelineElement>
 
